@@ -9,6 +9,7 @@ class App extends React.Component {
       vignettes: vignettes,
       number: 0
     }
+    this.changeScene = this.changeScene.bind(this)
   }
 
   generateTitle() {
@@ -17,9 +18,18 @@ class App extends React.Component {
     return title;
   }
 
+  changeScene() {
+    this.setState({
+        number: this.state.number += 1
+      })
+  }
+
   render() {
     return (
-      <h1>{this.generateTitle()}</h1>
+      <div>
+        <h1>{this.generateTitle()}</h1>
+        <button onClick={this.changeScene}></button>
+      </div>
     )
   }
 }
