@@ -20,8 +20,12 @@ class App extends React.Component {
     return title;
   }
 
+  thereAreTitlesLeft() {
+    return (this.state.number < this.state.length - 1);
+  }
+
   changeScene() {
-    if (this.state.number < this.state.length - 1) {
+    if (this.thereAreTitlesLeft()) {
       this.setState({
         number: this.state.number += 1
       })
