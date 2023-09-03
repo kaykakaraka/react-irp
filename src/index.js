@@ -8,7 +8,8 @@ class App extends React.Component {
     super(props)
     this.state = {
       vignettes: vignettes,
-      number: 0
+      number: 0,
+      length: vignettes.length
     }
     this.changeScene = this.changeScene.bind(this)
   }
@@ -20,9 +21,11 @@ class App extends React.Component {
   }
 
   changeScene() {
-    this.setState({
+    if (this.state.number < this.state.length - 1) {
+      this.setState({
         number: this.state.number += 1
       })
+    }
   }
 
   render() {
