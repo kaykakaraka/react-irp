@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import vignettes from './objects/vignettes';
+import './styles.css'
 
 class App extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class App extends React.Component {
     )
   }
 }
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App/>);
