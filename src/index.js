@@ -27,8 +27,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1>{this.generateTitle()}</h1>
+      <div className='main'>
+        <h1 id='title'>{this.generateTitle()}</h1>
         <button onClick={this.changeScene}></button>
       </div>
     )
