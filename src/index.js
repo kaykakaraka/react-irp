@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import vignettes from './objects/vignettes';
+import Title from './components/title'
 import './styles.css'
 
 class App extends React.Component {
@@ -35,27 +36,6 @@ class App extends React.Component {
     )
   }
 }
-
-class Title extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  generateTitle() {
-    let num = this.props.scene;
-    let title = this.props.vignettes[num].title;
-    return title;
-  }
-
-  render() {
-    return (
-      <h1 id='title'>
-        {this.generateTitle()}
-      </h1>
-    )
-}
-}
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App/>);
