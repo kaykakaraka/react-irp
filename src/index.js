@@ -8,20 +8,20 @@ class App extends React.Component {
     super(props)
     this.state = {
       vignettes: vignettes,
-      number: 0,
+      scene: 0,
       length: vignettes.length
     }
     this.changeScene = this.changeScene.bind(this)
   }
 
   thereAreTitlesLeft() {
-    return (this.state.number < this.state.length - 1);
+    return (this.state.scene < this.state.length - 1);
   }
 
   changeScene() {
     if (this.thereAreTitlesLeft()) {
       this.setState({
-        number: this.state.number += 1
+        number: this.state.scene += 1
       })
     }
   }
@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div className='main'>
-        <Title scene={this.state.number} vignettes={this.state.vignettes}/>
+        <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         <button onClick={this.changeScene}></button>
       </div>
     )
