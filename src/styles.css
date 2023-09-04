@@ -17,3 +17,9 @@ button {
   padding-top: 20%;
   padding-bottom: 20%;
 }
+
+.reload {
+  width: 75px;
+  margin-left: 500px;
+  margin-top: 300px;
+}

@@ -15,10 +15,15 @@ class App extends React.Component {
       sudoku: false
     }
     this.changeScene = this.changeScene.bind(this)
+    this.reload = this.reload.bind(this)
   }
 
   thereAreTitlesLeft() {
     return (this.state.scene < this.state.length - 1);
+  }
+
+  reload() {
+    window.location.reload(false);
   }
 
   changeScene() {
@@ -35,6 +40,7 @@ class App extends React.Component {
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 4 ? <Sudoku/> : null }
         <button onClick={this.changeScene} tabIndex={0}></button>
+        { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }
       </div>
     )
   }
