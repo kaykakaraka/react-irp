@@ -14,12 +14,6 @@ class App extends React.Component {
     this.changeScene = this.changeScene.bind(this)
   }
 
-  generateTitle() {
-    let num = this.state.number;
-    let title = this.state.vignettes[num].title;
-    return title;
-  }
-
   thereAreTitlesLeft() {
     return (this.state.number < this.state.length - 1);
   }
@@ -35,11 +29,31 @@ class App extends React.Component {
   render() {
     return (
       <div className='main'>
-        <h1 id='title'>{this.generateTitle()}</h1>
+        <Title scene={this.state.number} vignettes={this.state.vignettes}/>
         <button onClick={this.changeScene}></button>
       </div>
     )
   }
+}
+
+class Title extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  generateTitle() {
+    let num = this.props.scene;
+    let title = this.props.vignettes[num].title;
+    return title;
+  }
+
+  render() {
+    return (
+      <h1 id='title'>
+        {this.generateTitle()}
+      </h1>
+    )
+}
 }
 
 
