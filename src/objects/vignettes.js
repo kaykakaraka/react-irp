@@ -9,6 +9,8 @@ const vignettes = [
     title: 'how to go outside / now'
   }, {
     title: 'Sudoku'
+  }, {
+    title: 'The End'
   }
 ]
 
