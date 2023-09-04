@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import vignettes from './objects/vignettes';
 import Title from './components/title'
+import Sudoku from './components/sudoku';
 import './styles.css'
 
 class App extends React.Component {
@@ -10,7 +11,8 @@ class App extends React.Component {
     this.state = {
       vignettes: vignettes,
       scene: 0,
-      length: vignettes.length
+      length: vignettes.length,
+      sudoku: false
     }
     this.changeScene = this.changeScene.bind(this)
   }
@@ -22,7 +24,7 @@ class App extends React.Component {
   changeScene() {
     if (this.thereAreTitlesLeft()) {
       this.setState({
-        number: this.state.scene += 1
+        scene: this.state.scene += 1
       })
     }
   }
@@ -31,6 +33,7 @@ class App extends React.Component {
     return (
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
+        { this.state.scene == 4 ? <Sudoku/> : null }
         <button onClick={this.changeScene}></button>
       </div>
     )

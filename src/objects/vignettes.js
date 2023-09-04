@@ -7,6 +7,8 @@ const vignettes = [
     title: 'how to go outside'
   }, {
     title: 'how to go outside / now'
+  }, {
+    title: 'Sudoku'
   }
 ]
 

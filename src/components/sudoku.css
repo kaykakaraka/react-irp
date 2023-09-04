@@ -1,0 +1,49 @@
+* {
+  color: blue;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  text-align: center;
+}
+
+.board {
+  width: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  border-left: 4px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+  border-right: 2px solid black;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  border: 1px solid black;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.thick-right-border {
+  border-right: 3px solid black;
+}
+
+.thick-bottom {
+  border-bottom: 3px solid black;
+}
+
+.incorrect {
+  color: red;
+}
