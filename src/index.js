@@ -34,7 +34,7 @@ class App extends React.Component {
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 4 ? <Sudoku/> : null }
-        <button onClick={this.changeScene}></button>
+        <button onClick={this.changeScene} tabIndex={0}></button>
       </div>
     )
   }
