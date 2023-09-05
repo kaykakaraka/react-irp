@@ -13,6 +13,12 @@ const vignettes = [
   }, {
     title: 'Sudoku'
   }, {
+    title: 'Coding'
+  }, {
+    title: 'Tetris'
+  }, {
+    title: 'The Artist is Present'
+  },{
     title: 'The End'
   }
 ]
