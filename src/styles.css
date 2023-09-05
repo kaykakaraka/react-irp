@@ -23,3 +23,8 @@ button {
   margin-left: 500px;
   margin-top: 300px;
 }
+
+#vibration-button {
+  background-color: yellow;
+  align-self:last baseline;
+}

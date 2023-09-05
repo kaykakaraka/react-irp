@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import vignettes from './objects/vignettes';
 import Title from './components/title'
 import Sudoku from './components/sudoku';
+import VibrationButton from './components/vibrationButton'
 import './styles.css'
 
 class App extends React.Component {
@@ -38,6 +39,7 @@ class App extends React.Component {
     return (
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
+        { this.state.scene == 1 ? <VibrationButton /> : null }
         { this.state.scene == 4 ? <Sudoku/> : null }
         <button onClick={this.changeScene} tabIndex={0}></button>
         { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }
