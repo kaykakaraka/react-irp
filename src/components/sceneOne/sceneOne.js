@@ -6,9 +6,14 @@ class SceneOne extends React.Component {
     super(props)
   }
 
+
   render() {
+    const list = this.props.sceneInfo.vibrations.map((vibration) => <ul>{vibration}</ul>)
     return (
-      <VibrationButton/>
+      <div>
+        <VibrationButton />
+        { list }
+      </div>
     )
   }
 }
