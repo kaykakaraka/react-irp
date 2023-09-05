@@ -1,4 +1,5 @@
 import React from 'react'
+import './theArtistIsPresent.css'
 
 class TheArtistIsPresent extends React.Component {
   constructor(props) {
