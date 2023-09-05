@@ -9,10 +9,6 @@ button {
   margin-top: 50px;
 }
 
-#title {
-  padding-bottom: 30px;
-}
-
 .main {
   padding-top: 20%;
   padding-bottom: 20%;
@@ -24,7 +20,3 @@ button {
   margin-top: 300px;
 }
 
-#vibration-button {
-  background-color: yellow;
-  align-self:last baseline;
-}

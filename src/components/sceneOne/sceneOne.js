@@ -5,25 +5,34 @@ class SceneOne extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      vibrationsShowing: false
+      vibrationsShowing: false,
+      items: []
     } 
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
-    this.setState({
-      vibrationsShowing: true
+    this.props.vibrations.map((vibration, index) => {
+      setTimeout(() => {
+        const newItem = <div key={index}>{vibration}</div>;
+      
+        this.setState(prevState => ({
+        vibrationsShowing: true,
+        items: [...prevState.items, newItem]
+        }))
+      }, index * 2000);
     })
   }
 
   render() {
-    const list = this.props.vibrations.map((vibration) => <ul>{vibration}</ul>)
+    const list = this.state.items;
     return (
       <div id='scene-one-container'>
-        { this.state.vibrationsShowing ? list : <VibrationButton handleClick={this.handleClick}/> }
+        { this.state.vibrationsShowing ? <ul>{list}</ul> : <VibrationButton handleClick={this.handleClick}/> }
       </div>
     )
   }
+
 }
 
 export default SceneOne;
