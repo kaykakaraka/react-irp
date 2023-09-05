@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
-        { this.state.scene == 1 ? <SceneOne sceneInfo={this.state.vignettes[1]}/> : null }
+        { this.state.scene == 1 ? <SceneOne vibrations={this.state.vignettes[1].vibrations}/> : null }
         { this.state.scene == 4 ? <Sudoku/> : null }
         <button onClick={this.changeScene} tabIndex={0}></button>
         { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }

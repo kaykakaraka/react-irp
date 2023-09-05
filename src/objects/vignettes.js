@@ -6,7 +6,6 @@ const vignettes = [
   }, {
     title: 'Linda gets a girlfriend',
     vibrations: vibrations,
-    vibrationsShowing: false
   }, {
     title: 'how to go outside'
   }, {

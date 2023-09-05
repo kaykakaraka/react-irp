@@ -5,7 +5,7 @@ class SceneOne extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      vibrationsShowing: this.props.sceneInfo.vibrationsShowing
+      vibrationsShowing: false
     } 
     this.handleClick = this.handleClick.bind(this)
   }
@@ -17,7 +17,7 @@ class SceneOne extends React.Component {
   }
 
   render() {
-    const list = this.props.sceneInfo.vibrations.map((vibration) => <ul>{vibration}</ul>)
+    const list = this.props.vibrations.map((vibration) => <ul>{vibration}</ul>)
     return (
       <div id='scene-one-container'>
         { this.state.vibrationsShowing ? list : <VibrationButton handleClick={this.handleClick}/> }
