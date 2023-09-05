@@ -8,7 +8,7 @@ class VibrationButton extends React.Component {
 
   render() {
     return (
-      <button id='vibration-button'>VIBRATIONS</button>
+      <button id='vibration-button' onClick={this.props.handleClick}>VIBRATIONS</button>
     )
   }
 }
