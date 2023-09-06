@@ -20,7 +20,11 @@ const vignettes = [
     title: 'Tetris'
   }, {
     title: 'The Artist is Present'
-  },{
+  }, {
+    title: 'The Artist is Really Present'
+  }, {
+    title: 'Facts'
+  }, {
     title: 'The End'
   }
 ]
