@@ -8,11 +8,13 @@ const vignettes = [
     vibrations: vibrations,
   }, {
     title: 'how to go outside'
-  }, {
-    title: 'how to go outside / now'
-  }, {
+  },  {
     title: 'Sudoku'
   }, {
+    title: 'Linda becomes linda_meditates'
+  }, {
+    title: 'how to go outside / now'
+  },{
     title: 'Coding'
   }, {
     title: 'Tetris'

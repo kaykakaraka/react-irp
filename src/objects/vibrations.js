@@ -10,7 +10,15 @@ const vibrations = [
   'When her phone rings',
   'Calling someone',
   'In supermarkets',
-  'Whenever she sees a live fish.'
+  'Whenever she sees a live fish.',
+  '',
+  '',
+  '',
+  'Feeling full',
+  'That loud noise the tube makes',
+  'When someone asks her for directions',
+  'When she knows she is about to meet someone new and she isn’t sure whether she should be shaking their hands or maybe even giving them a kiss on the cheek',
+  'Whenever any ticket inspector asks her for a ticket, even though she always buys a ticket'
 ]
 
 export default vibrations;
