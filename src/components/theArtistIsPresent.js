@@ -9,7 +9,7 @@ class TheArtistIsPresent extends React.Component {
   render() {
     return (
       <div className='video-container'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/xlf68X2qEpM?si=-FrtmggaRMkHwnJc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xlf68X2qEpM?si=-FrtmggaRMkHwnJc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
     )
   }
