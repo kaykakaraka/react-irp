@@ -1,4 +1,5 @@
 import vibrations from "./vibrations";
+import choices from "./choices"
 
 const vignettes = [
   {
@@ -15,7 +16,8 @@ const vignettes = [
   },  {
     title: 'Sudoku'
   }, {
-    title: 'Linda becomes linda_meditates'
+    title: 'Linda becomes linda_meditates',
+    choices: choices
   }, {
     title: 'how to go outside / now'
   },{
