@@ -4,6 +4,10 @@ const vignettes = [
   {
     title: 'how to be together / now'
   }, {
+    title: 'how to be together / NOW'
+  },{
+    title: 'no really, now'
+  },{
     title: 'Linda gets a girlfriend',
     vibrations: vibrations,
   }, {

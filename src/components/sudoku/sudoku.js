@@ -1,6 +1,6 @@
 import React from 'react';
-import Board from './board';
-import boardArray from '../objects/boardArray';
+import Board from './board'
+import boardArray from '../../objects/boardArray';
 import './sudoku.css'
 
 class Sudoku extends React.Component {
