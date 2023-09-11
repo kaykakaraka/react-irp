@@ -1,5 +1,5 @@
 import React from "react"
-import './vibrationButton.css'
+import './listButton.css'
 
 class VibrationButton extends React.Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class VibrationButton extends React.Component {
 
   render() {
     return (
-      <button id='vibration-button' onClick={this.props.handleClick}>VIBRATIONS</button>
+      <button className='list-button' onClick={this.props.handleClick}>VIBRATIONS</button>
     )
   }
 }
