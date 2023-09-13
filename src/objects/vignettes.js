@@ -1,5 +1,6 @@
 import vibrations from "./vibrations";
 import choices from "./choices"
+import facts from "./facts"
 
 const vignettes = [
   {
@@ -25,7 +26,8 @@ const vignettes = [
   }, {
     title: 'The Artist is Really Present'
   }, {
-    title: 'Facts'
+    title: 'Facts',
+    facts: facts
   }, {
     title: 'The End'
   }
