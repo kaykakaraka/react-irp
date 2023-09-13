@@ -52,7 +52,7 @@ class App extends React.Component {
         { this.state.scene == 4 ? < HowToGoOutside /> : null}
         { this.state.scene == 5 ? <Sudoku/> : null }
         { this.state.scene == 6 ? <LindaMeditates choices={this.state.vignettes[6].choices}/> : null }
-        { this.state.scene == 10 ? <TheArtistIsPresent /> : null}
+        { this.state.scene == 8 ? <TheArtistIsPresent /> : null}
         <button onClick={this.changeScene} tabIndex={0}></button>
         { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }
       </div>

@@ -5,9 +5,9 @@ const vignettes = [
   {
     title: 'how to be together / now'
   }, {
-    title: 'how to be together / NOW'
+    title: 'experiments in presence'
   },{
-    title: 'no really, now'
+    title: 'now'
   },{
     title: 'Linda gets a girlfriend',
     vibrations: vibrations,
@@ -18,10 +18,6 @@ const vignettes = [
   }, {
     title: 'Linda becomes linda_meditates',
     choices: choices
-  }, {
-    title: 'how to go outside / now'
-  },{
-    title: 'Coding'
   }, {
     title: 'Tetris'
   }, {
