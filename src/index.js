@@ -45,16 +45,15 @@ class App extends React.Component {
   }
 
   render() {
-    { setTimeout( () => (this.break()), 1500000) } 
+    { setTimeout( () => (this.break()), 900000) } 
     return (
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 3 ? <SceneOne vibrations={this.state.vignettes[this.state.scene].vibrations}/> : null }
-        { this.state.scene == 4 ? < HowToGoOutside /> : null}
-        { this.state.scene == 5 ? <Sudoku/> : null }
-        { this.state.scene == 6 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }
-        { this.state.scene == 8 ? <TheArtistIsPresent /> : null}
-        { this.state.scene == 10 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
+        { this.state.scene == 4 ? <Sudoku/> : null }
+        { this.state.scene == 5 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }
+        { this.state.scene == 7 ? <TheArtistIsPresent /> : null}
+        { this.state.scene == 9 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
         <button onClick={this.changeScene} tabIndex={0}></button>
         { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }
       </div>

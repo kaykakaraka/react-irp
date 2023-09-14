@@ -13,8 +13,6 @@ const vignettes = [
     title: 'Linda gets a girlfriend',
     vibrations: vibrations,
   }, {
-    title: 'how to go outside'
-  },  {
     title: 'Sudoku'
   }, {
     title: 'Linda becomes linda_meditates',
