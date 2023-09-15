@@ -1,5 +1,6 @@
 import React from "react";
 import FactButton from "./factButton";
+import './facts.css'
 
 class Facts extends React.Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Facts extends React.Component {
     const list = this.state.items
     return (
       <div id='facts-container'>
-        { this.state.showing ? <ul>{list}</ul> : <FactButton handleClick={this.handleClick}/> }
+        { this.state.showing ? <ul className='fact'>{list}</ul> : <FactButton handleClick={this.handleClick}/> }
       </div>
     )
   }
