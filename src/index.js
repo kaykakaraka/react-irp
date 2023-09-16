@@ -37,6 +37,10 @@ class App extends React.Component {
       this.setState({
         scene: this.state.scene += 1
       })
+    } else {
+      this.setState({
+        scene: this.state.scene = 3
+      })
     }
   }
 
@@ -55,7 +59,6 @@ class App extends React.Component {
         { this.state.scene == 7 ? <TheArtistIsPresent /> : null}
         { this.state.scene == 9 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
         <button onClick={this.changeScene} tabIndex={0}></button>
-        { this.state.scene == vignettes.length - 1 ? <button className='reload' onClick={this.reload}>RELOAD</button> : null }
       </div>
     )
   }
