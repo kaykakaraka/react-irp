@@ -9,6 +9,7 @@ import HowToGoOutside from './components/howToGoOutside';
 import './styles.css'
 import LindaMeditates from './components/linda_meditates/lindaMeditates';
 import Facts from './components/facts/facts';
+import Timer from './components/timer/timer';
 
 class App extends React.Component {
   constructor(props) {
@@ -52,6 +53,7 @@ class App extends React.Component {
     { setTimeout( () => (this.break()), 900000) } 
     return (
       <div className='main'>
+        <Timer/>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 3 ? <SceneOne vibrations={this.state.vignettes[this.state.scene].vibrations}/> : null }
         { this.state.scene == 4 ? <Sudoku/> : null }
