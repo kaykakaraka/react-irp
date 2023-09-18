@@ -14,14 +14,30 @@ const vibrations = [
   '',
   '',
   '',
+  '',
+  '',
+  '',
+  '',
   'Feeling full',
   'Feeling too hungry',
   'Waiting for food longer than expected',
   'Having to make conversation when hungry and anticipating food',
   'That loud noise the tube makes',
+  'The sound of an email sending',
+  'Doors slamming',
+  'Windows slamming',
+  'Lights buzzing',
+  'The sound of a phone falling to the ground',
+  'The sound the toilet water made when she dropped her phone into it that one time',
+  'The sound her laptop made when she pushed it off her desk that one time',
+  'The sound a slug is made as it is crushed underfoot',
   'When someone asks her for directions',
-  'When she knows she is about to meet someone new and she isn’t sure whether she should be shaking their hands or maybe even giving them a kiss on the cheek',
-  'Whenever any ticket inspector asks her for a ticket, even though she always buys a ticket'
+  "When she knows she is about to meet someone new and she isn’t sure whether she should be shaking their hands or maybe even giving them a kiss on the cheek",
+  'Whenever any ticket inspector asks her for a ticket, even though she always buys a ticket',
+  'When she adds something to her online basket and the timer in the corner begins, that tells her she has increasingly little time to definitely buy this thing',
+  "When she joins an online queue to buy tickets and she doesn't know how long this repetiton will continue",
+  "When she is on hold and she doesn't know how long this repetition will continue",
+  ''
 ]
 
 export default vibrations;

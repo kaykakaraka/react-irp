@@ -10,6 +10,7 @@ html, body {
 button {
   width: 500px;
   height: 50px;
+  min-height: 50px;
   margin-top: 50px;
 }
 
@@ -29,5 +30,9 @@ button {
 
 #text {
   opacity: 0%;
+}
+
+ul {
+  font-size: 22px;
 }
 
