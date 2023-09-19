@@ -10,6 +10,8 @@ import './styles.css'
 import LindaMeditates from './components/linda_meditates/lindaMeditates';
 import Facts from './components/facts/facts';
 import Timer from './components/timer/timer';
+import UIfx from 'uifx';
+import successBell from '../public/success_bell.mp3';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +22,7 @@ class App extends React.Component {
       length: vignettes.length,
       sudoku: false
     }
+    this.beep = new UIfx(successBell);
     this.changeScene = this.changeScene.bind(this)
     this.reload = this.reload.bind(this)
     this.break = this.break.bind(this)
@@ -43,6 +46,7 @@ class App extends React.Component {
         scene: this.state.scene = 3
       })
     }
+    this.beep.play();
   }
 
   break() {
@@ -53,7 +57,6 @@ class App extends React.Component {
     { setTimeout( () => (this.break()), 900000) } 
     return (
       <div className='main'>
-        <Timer/>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 3 ? <SceneOne vibrations={this.state.vignettes[this.state.scene].vibrations}/> : null }
         { this.state.scene == 4 ? <Sudoku/> : null }

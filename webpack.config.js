@@ -29,7 +29,12 @@ module.exports = {
           // attach the presets to the loader (most projects use .babelrc file instead)
           presets: ["@babel/preset-env", "@babel/preset-react"]
         }
-      }, {
+      }, 
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader'
+      }, 
+      {
         test: /\.mp4$/,
         use: [
             {
