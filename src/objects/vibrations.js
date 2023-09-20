@@ -36,6 +36,8 @@ const vibrations = [
   "When she knows she is about to meet someone new and she isn’t sure whether she should be shaking their hands or maybe even giving them a kiss on the cheek",
   'Whenever any ticket inspector asks her for a ticket, even though she always buys a ticket',
   'When she adds something to her online basket and the timer in the corner begins, that tells her she has increasingly little time to definitely buy this thing',
+  'Timers',
+  'Deadlines',
   "When she joins an online queue to buy tickets and she doesn't know how long this repetiton will continue",
   "When she is on hold and she doesn't know how long this repetition will continue",
   "Feeling trapped",
