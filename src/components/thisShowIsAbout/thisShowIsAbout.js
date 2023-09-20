@@ -26,7 +26,7 @@ class ThisShowIsAbout extends React.Component {
     const list = this.state.items;
     return (
       <div>
-        <ul>{list}</ul>
+        <p>{list}</p>
       </div>
     )
   }

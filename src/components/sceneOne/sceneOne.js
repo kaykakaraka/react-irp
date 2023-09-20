@@ -28,7 +28,7 @@ class SceneOne extends React.Component {
     const list = this.state.items;
     return (
       <div id='scene-one-container'>
-        { this.state.vibrationsShowing ? <ul>{list}</ul> : <VibrationButton handleClick={this.handleClick}/> }
+        { this.state.vibrationsShowing ? <p>{list}</p> : <VibrationButton handleClick={this.handleClick}/> }
       </div>
     )
   }

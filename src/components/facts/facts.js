@@ -30,7 +30,7 @@ class Facts extends React.Component {
     const list = this.state.items
     return (
       <div id='facts-container'>
-        { this.state.showing ? <ul className='fact'>{list}</ul> : <FactButton handleClick={this.handleClick}/> }
+        { this.state.showing ? <p className='fact'>{list}</p> : <FactButton handleClick={this.handleClick}/> }
       </div>
     )
   }
