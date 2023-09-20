@@ -5,11 +5,9 @@ import Title from './components/title'
 import Sudoku from './components/sudoku/sudoku'
 import SceneOne from './components/sceneOne/sceneOne';
 import TheArtistIsPresent from './components/theArtistIsPresent';
-import HowToGoOutside from './components/howToGoOutside';
 import './styles.css'
 import LindaMeditates from './components/linda_meditates/lindaMeditates';
 import Facts from './components/facts/facts';
-import Timer from './components/timer/timer';
 import UIfx from 'uifx';
 import successBell from '../public/success_bell.mp3';
 import NextButton from './components/nextButton/nextButton';
