@@ -12,6 +12,7 @@ import Facts from './components/facts/facts';
 import Timer from './components/timer/timer';
 import UIfx from 'uifx';
 import successBell from '../public/success_bell.mp3';
+import NextButton from './components/nextButton/nextButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class App extends React.Component {
       length: vignettes.length,
       sudoku: false
     }
-    this.beep = new UIfx(successBell);
+    this.beep = new UIfx(successBell, {volume: 0.5});
     this.changeScene = this.changeScene.bind(this)
     this.reload = this.reload.bind(this)
     this.break = this.break.bind(this)
@@ -37,6 +38,7 @@ class App extends React.Component {
   }
 
   changeScene() {
+    if (this.state.scene > 1) {this.beep.play()}
     if (this.thereAreTitlesLeft()) {
       this.setState({
         scene: this.state.scene += 1
@@ -46,11 +48,11 @@ class App extends React.Component {
         scene: this.state.scene = 3
       })
     }
-    this.beep.play();
+    
   }
 
   break() {
-    <Breaking/ >
+    <Linda/ >
   }
 
   render() {
@@ -63,7 +65,7 @@ class App extends React.Component {
         { this.state.scene == 5 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }
         { this.state.scene == 7 ? <TheArtistIsPresent /> : null}
         { this.state.scene == 9 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
-        <button onClick={this.changeScene} tabIndex={0}></button>
+        <NextButton changeScene={this.changeScene} />
       </div>
     )
   }
