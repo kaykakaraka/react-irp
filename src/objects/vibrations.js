@@ -24,6 +24,7 @@ const vibrations = [
   'Having to make conversation when hungry and anticipating food',
   'That loud noise the tube makes',
   'The sound of an email sending',
+  'Receiving any kind of correspondance from her landlord',
   'Doors slamming',
   'Windows slamming',
   'Lights buzzing',
@@ -37,7 +38,14 @@ const vibrations = [
   'When she adds something to her online basket and the timer in the corner begins, that tells her she has increasingly little time to definitely buy this thing',
   "When she joins an online queue to buy tickets and she doesn't know how long this repetiton will continue",
   "When she is on hold and she doesn't know how long this repetition will continue",
-  ''
+  "Feeling trapped",
+  "Feeling like nothing will change",
+  "Having to make a decision",
+  "Having to make a decision alone",
+  "Having to make a decision under the gaze of other people",
+  "Crowds",
+  "Introspection",
+  "The sound of her own chewing in a room with other people"
 ]
 
 export default vibrations;
