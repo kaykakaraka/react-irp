@@ -1,12 +1,14 @@
 import vibrations from "./vibrations";
 import choices from "./choices"
 import facts from "./facts"
+import aShowAbout from "./aShowAbout";
 
 const vignettes = [
   {
     title: 'how to be together / now'
   }, {
-    title: 'experiments in presence'
+    title: 'experiments in presence',
+    aShowAbout: aShowAbout
   },{
     title: 'now'
   },{
