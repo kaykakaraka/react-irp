@@ -64,7 +64,7 @@ class App extends React.Component {
         { this.state.scene == 4 ? <Sudoku/> : null }
         { this.state.scene == 5 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }
         { this.state.scene == 7 ? <TheArtistIsPresent /> : null}
-        { this.state.scene == 9 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
+        { this.state.scene == 7 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
         <NextButton changeScene={this.changeScene} />
       </div>
     )

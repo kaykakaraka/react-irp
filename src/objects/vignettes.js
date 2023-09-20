@@ -20,16 +20,12 @@ const vignettes = [
     title: 'Linda becomes linda_meditates',
     choices: choices
   }, {
-    title: 'Tetris'
+    title: 'Meditation'
   }, {
-    title: 'The Artist is Present'
-  }, {
-    title: 'The Artist is Really Present'
-  }, {
-    title: 'Facts',
+    title: 'Linda finds The Artist is Present',
     facts: facts
   }, {
-    title: 'The End'
+    title: 'The Artist is Present'
   }
 ]
 
