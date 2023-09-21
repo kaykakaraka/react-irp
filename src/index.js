@@ -12,6 +12,7 @@ import UIfx from 'uifx';
 import successBell from '../public/success_bell.mp3';
 import NextButton from './components/nextButton/nextButton';
 import ThisShowIsAbout from './components/thisShowIsAbout/thisShowIsAbout';
+import ExampleButton from './components/preShow3/exampleButton';
 
 class App extends React.Component {
   constructor(props) {
@@ -60,6 +61,7 @@ class App extends React.Component {
       <div className='main'>
         <Title scene={this.state.scene} vignettes={this.state.vignettes}/>
         { this.state.scene == 1 ? <ThisShowIsAbout aShowAbout={this.state.vignettes[this.state.scene].aShowAbout}/> : null}
+        { this.state.scene == 2 ? <ExampleButton /> : null }
         { this.state.scene == 3 ? <SceneOne vibrations={this.state.vignettes[this.state.scene].vibrations}/> : null }
         { this.state.scene == 4 ? <Sudoku/> : null }
         { this.state.scene == 5 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }

@@ -6,7 +6,7 @@ class ThisShowIsAbout extends React.Component {
     this.state = {
       items: []
     }
-    setTimeout(this.showOptions(), 5000);
+    setTimeout(this.showOptions(), 3000);
   }
 
   showOptions() {
