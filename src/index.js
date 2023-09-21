@@ -13,6 +13,7 @@ import successBell from '../public/success_bell.mp3';
 import NextButton from './components/nextButton/nextButton';
 import ThisShowIsAbout from './components/thisShowIsAbout/thisShowIsAbout';
 import ExampleButton from './components/preShow3/exampleButton';
+import TheArtistIsOnline from './components/theArtistIsOnline/theArtistIsOnline';
 
 class App extends React.Component {
   constructor(props) {
@@ -67,6 +68,7 @@ class App extends React.Component {
         { this.state.scene == 5 ? <LindaMeditates choices={this.state.vignettes[this.state.scene].choices}/> : null }
         { this.state.scene == 7 ? <TheArtistIsPresent /> : null}
         { this.state.scene == 7 ? <Facts facts={this.state.vignettes[this.state.scene].facts}/> : null}
+        { this.state.scene == 9 ? <TheArtistIsOnline /> : null}
         <NextButton changeScene={this.changeScene} />
       </div>
     )

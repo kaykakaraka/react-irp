@@ -26,6 +26,8 @@ const vignettes = [
     facts: facts
   }, {
     title: 'The Artist is Present'
+  }, {
+    title: 'The Artist is Online'
   }
 ]
 
