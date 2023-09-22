@@ -22,6 +22,8 @@ const vignettes = [
   }, {
     title: 'Meditation'
   }, {
+    title: 'linda_meditates'
+  }, {
     title: 'Linda finds The Artist is Present',
     facts: facts
   }, {

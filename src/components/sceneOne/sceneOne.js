@@ -8,10 +8,12 @@ class SceneOne extends React.Component {
       vibrationsShowing: false,
       items: []
     } 
+    setTimeout( () => (this.props.break()), 1200000) 
     this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
+    this.props.bell.play();
     this.props.vibrations.map((vibration, index) => {
       setTimeout(() => {
         const newItem = <div key={index}>{vibration}</div>;

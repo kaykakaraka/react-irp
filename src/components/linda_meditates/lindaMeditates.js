@@ -12,6 +12,7 @@ class LindaMeditates extends React.Component {
   }
 
   handleClick() {
+    this.props.bell.play();
     this.props.choices.map((choice, index) => {
       setTimeout(() => {
         const newItem = <div key={index}>{choice}</div>;

@@ -13,6 +13,7 @@ class Facts extends React.Component {
   } 
   
   handleClick() {
+    this.props.bell.play();
     this.props.facts.map((fact, index) => {
       setTimeout(() => {
         const newItem = <div key={index}>{fact}</div>;
