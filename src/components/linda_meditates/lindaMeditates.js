@@ -29,7 +29,7 @@ class LindaMeditates extends React.Component {
     const list = this.state.items;
     return (
       <div id='scene-one-container'>
-        { this.state.showing ? <ul>{list}</ul> : <ChoiceButton handleClick={this.handleClick}/> }
+        { this.state.showing ? <p>{list}</p> : <ChoiceButton handleClick={this.handleClick}/> }
       </div>
     )
   }
