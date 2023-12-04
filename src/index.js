@@ -28,7 +28,7 @@ class App extends React.Component {
     }
     this.beep = new UIfx(successBell, {volume: 0.5});
     this.bell = new UIfx(bell);
-    this.buzz - new UIfx(candleBuzz);
+    this.buzz = new UIfx(candleBuzz);
     this.changeScene = this.changeScene.bind(this)
     this.reload = this.reload.bind(this)
     this.break = this.break.bind(this)

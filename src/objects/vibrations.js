@@ -1,4 +1,5 @@
 const vibrations = [
+  '', '', '', '', '', '', '', '', '', '',
   'Writing an email',
   'Having just sent an email',
   'In supermarkets',
@@ -17,7 +18,7 @@ const vibrations = [
   '',
   '',
   '',
-  '',
+  '', '', '', '', '', '',
   'Feeling full',
   'Feeling too hungry',
   'Waiting for food longer than expected',

@@ -8,7 +8,7 @@ class SceneOne extends React.Component {
       vibrationsShowing: false,
       items: []
     } 
-    setTimeout( () => (this.props.break()), 1200000) 
+    setTimeout( () => (this.props.break()), 3000) 
     this.handleClick = this.handleClick.bind(this)
   }
 
