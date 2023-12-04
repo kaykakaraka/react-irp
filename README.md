@@ -27,3 +27,10 @@ If I had more time, I would:
 3. Install node.js dependencies `npm install`
 4. Start the server `npm start`
 5. Open http://localhost:8080/
+
+### Design notes
+
+* Designed to evoke ideas of the early internet
+* The button to move to the next scene is designed to mirror the space bar
+* Uses some ideas of colour theory and reward sounds to encourage the audience to move through the scenes
+* Larger font sizes than you would usually expect on your computer as it is designed to be projected for a larger audience to view
